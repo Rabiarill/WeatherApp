@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="MainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.weatherapp.Controller">
+   <ImageView fitHeight="600.0" fitWidth="500.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../img/mountains.jpg" />
+   </ImageView>
+   <Label fx:id="Weather" alignment="CENTER" layoutX="123.0" layoutY="69.0" prefHeight="70.0" prefWidth="254.0" text="Погода" textAlignment="CENTER">
+      <font>
+         <Font name="Arial" size="36.0" />
+      </font>
+   </Label>
+   <Label fx:id="Temp" alignment="CENTER" layoutX="140.0" layoutY="219.0" prefHeight="58.0" prefWidth="220.0" text="0°С" textAlignment="CENTER">
+      <font>
+         <Font name="Arial" size="36.0" />
+      </font>
+   </Label>
+   <Label fx:id="Location" alignment="CENTER" layoutX="99.0" layoutY="139.0" prefHeight="40.0" prefWidth="302.0" text="Город, код страны" textAlignment="CENTER">
+      <font>
+         <Font name="Arial" size="15.0" />
+      </font>
+   </Label>
+   <Label fx:id="TempFeelsLike" alignment="CENTER" layoutX="67.0" layoutY="277.0" prefHeight="31.0" prefWidth="366.0" text="По ощущениям: 0°С" textAlignment="CENTER">
+      <font>
+         <Font name="Arial" size="18.0" />
+      </font>
+   </Label>
+   <Label fx:id="Precipitation" alignment="CENTER" layoutX="99.0" layoutY="179.0" prefHeight="40.0" prefWidth="302.0" text="Осадки" textAlignment="CENTER">
+      <font>
+         <Font name="Arial" size="28.0" />
+      </font>
+   </Label>
+   <Button fx:id="GetWeatherButton" layoutX="180.0" layoutY="474.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="137.0" style="-fx-background-radius: 30;" text="Узнать погоду">
+      <font>
+         <Font name="Arial" size="14.0" />
+      </font>
+   </Button>
+   <TextField fx:id="CityTextField" layoutX="138.0" layoutY="402.0" prefHeight="26.0" prefWidth="220.0" promptText="Введите город" style="-fx-background-radius: 30;">
+      <font>
+         <Font name="Arial" size="20.0" />
+      </font>
+   </TextField>
+</Pane>
